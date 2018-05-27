@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+    <form action="IngresoDatosDocente" method="POST">
+        <br>
+        <table border="3" cellpadding="5">
+            <caption>FICA</caption>
+            <tr>
+            <br>
+                <td rowspan="3">DOCENTES</td>
+            </tr>
+            <th>Id docente : <input type="text" name="id" value="" size="10" /></th>
+            <th>Nombre docente : <input type="text" name="nombre" value="" size="40" /></th>
+            <th>Edad docente : <input type="text" name="edad" value="" size="5" /></th>
+              </table>
+            <br>
+            <input type="submit" value="Grabar" /><br><br>             
+        </form>
+        
+        <form action="EliminarDatosDocente" method="POST">
+                        <input type="submit" value="Eliminar" /><p>
+        </form>
+        
+        <form action="ModificarDatosDocente" method="POST">
+                        <input type="submit" value="Actualizar" /><p>
+        </form>
+
+        <form action="ReporteDocentes" method="POST">
+            <input type="submit" value="Reporte de Docentes" />
+        </form>        
+        <br>
+        <br>
+        
+    <form action="IngresoDatosMateria" method="POST">
+        <table border="3" cellpadding="5"> 
+            <tr>
+            <td rowspan="3">MATERIAS</td>
+            </tr>
+            <th>Código de la materia : <input type="text" name="codigo" value="" size="10" /></th>
+            <th>Nombre de la materia : <input type="text" name="materia" value="" size="25" /></th>
+            <th>Id docente : <input type="text" name="id" value="" size="10" /></th>
+            </table>
+                <br>
+         <input type="submit" value="Grabar" /><br><br>
+    </form>
+        
+        <form action="EliminarDatosMateria" method="POST">
+            <input type="submit" value="Eliminar" /><p>
+        </form>
+        
+        <form action="ModificarDatosMateria" method="POST">
+                        <input type="submit" value="Actualizar" /><p>
+        </form>
+        
+        <form action="ReporteMaterias" method="POST">
+                        <input type="submit" value="Reporte de Materias" /><p>
+        </form>
+        </form>
+    </body>
+</html>

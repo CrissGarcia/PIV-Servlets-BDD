@@ -1,0 +1,18 @@
+CREATE DATABASE FICA
+GO
+USE FICA
+
+CREATE TABLE DOCENTES(
+idDocente INT PRIMARY KEY,
+nomDocente VARCHAR(50) not null,
+edadDocente VARCHAR(50) not null
+)
+
+CREATE TABLE MATERIAS(
+codMateria INT,
+nomMateria VARCHAR(50) not null,
+idDocente INT,
+CONSTRAINT FK_CLAVE FOREIGN KEY (idDocente) REFERENCES DOCENTES(idDocente)
+)
+
+select * from DOCENTES
